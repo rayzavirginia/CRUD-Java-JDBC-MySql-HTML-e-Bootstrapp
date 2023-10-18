@@ -1,0 +1,36 @@
+CREATE DATABASE AgenciaViagens;
+USE AgenciaViagens;
+
+CREATE TABLE Cliente(
+idCliente INT AUTO_INCREMENT PRIMARY KEY,
+nomeCliente VARCHAR(255) NOT NULL,
+cpfCliente VARCHAR(11) UNIQUE NOT NULL,
+enderecoCliente TEXT NOT NULL,
+telefoneCliente VARCHAR(20)
+);
+
+CREATE TABLE Destinos(
+idDestino INT AUTO_INCREMENT PRIMARY KEY,
+nomeDestino VARCHAR(255) NOT NULL,
+estadoDestino VARCHAR(30) NOT NULL,
+paisDestino VARCHAR(30) NOT NULL,
+dataDestino VARCHAR(100) NOT NULL,
+precoDestino VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE Agencia_de_viagens(
+idAgencia INT AUTO_INCREMENT PRIMARY KEY,
+nomeAgencia VARCHAR(255) NOT NULL,
+cnpjAgencia VARCHAR(20) NOT NULL,
+siteAgencia VARCHAR(255) NOT NULL,
+enderecoAgencia TEXT NOT NULL
+);
+
+
+INSERT INTO Cliente(nomeCliente, cpfCliente, enderecoCliente, telefoneCliente) VALUES ('Rayza', '01732508313', 'Quadra 12', '9999-9999');
+
+INSERT INTO Destinos(nomeDestino, estadoDestino, paisDestino, dataDestino, precoDestino) VALUES ('Jericoacoara', 'Ceará', 'Brasil', '01/04/23 a 07/04/23', 'R$899,00'); 
+
+INSERT INTO Agencia_de_viagens(nomeAgencia, cnpjAgencia, siteAgencia, enderecoAgencia) VALUES ('Férias.com', '88888888/0001-00', 'www.ferias.com', 'Rua 1, Tersina/PI');
+
+INSERT INTO viaja(idCliente, idDestino) VALUES (1, 1);

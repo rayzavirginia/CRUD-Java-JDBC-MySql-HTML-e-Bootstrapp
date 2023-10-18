@@ -1,0 +1,550 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width:100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+main{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+
+.navbar{
+    background-color: rgb(7, 7, 122);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    
+}
+
+.logo img{
+    height: auto;
+    margin-left: -160px;
+    margin: 10px 10px 10px 20px;
+    height: 50px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px;
+    gap: 25px;
+}
+
+.menu a{
+    font-size: 20px;
+}
+.login{
+    display: flex;
+    padding: 10px;
+    gap: 25px;
+    padding-right: 25px;
+}
+
+.login a{
+    font-size: 20px;
+}
+
+
+
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+
+
+  .slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+  }
+  
+  .slider-content input, .img-mobile{
+    display: none;
+  }
+  
+  .slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+  }
+  
+  .slider-content p{
+    position: absolute;
+    text-align: center;
+    bottom:0;
+    right:0;
+    top: 0;
+    margin-right:20px;
+    margin-top: 20px;
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 8px #817e7eaa;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+  .slide-box img{
+    width: 100%;
+  }
+  
+  .nav-manual, .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 38%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid rgb(7, 7, 122);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 10px;
+  }
+  
+  .nav-manual .manual-btn:hover{
+    background-color: rgb(7, 7, 122);
+  }
+  
+  #radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3, #radio4:checked ~ .nav-auto .auto-btn4{
+    background-color: rgb(121, 172, 255);
+  }
+  
+  #radio1:checked ~ .primeiro{
+    margin-left: 0%;
+  }
+  
+  #radio2:checked ~ .primeiro{
+    margin-left: -25%;
+  }
+  
+  #radio3:checked ~ .primeiro{
+    margin-left: -50%;
+  }
+  
+  #radio4:checked ~ .primeiro{
+    margin-left: -75%;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .img-desktop{
+      display: none;
+    }
+  
+    .img-mobile{
+      display: block;
+    }
+  
+    .nav-auto, .nav-manual{
+      margin-top: 60%;
+    }
+  }
+
+
+
+
+article{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(250, 245, 196);
+    color: rgb(49, 57, 60,);
+    width: 100%;
+    height: 100%;
+}
+
+article h2{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+article p{
+    font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction:column;
+}
+
+
+
+.praias{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin-top: 50px;
+
+
+}
+
+.natureza{
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-left: -70px;
+  margin-top: 140px;
+}
+
+.h2, .h2 p{
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+
+.romance{
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-right: -110px;
+  margin-top: 140px;
+}
+
+.romance h2{
+  margin: auto;
+}
+
+
+.cards-praias, .cards-natureza, .cards-romance{
+  display: flex;
+  margin:auto;
+  gap: 15px;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 4px 6px 12px #817e7eaa;
+}
+
+.card h3{
+    color: rgb(7, 7, 122) ;
+    font-weight: bold;
+    margin-top: 10px ;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.valores{
+    display: flex;
+    color: white;
+}
+
+.valores li{
+    font-size: 15px;
+    margin-top: 5px;
+    padding: -20px;
+    color: white;  
+}
+
+.hospedagem{
+    background-color: rgb(7, 7, 122);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: start;
+}
+
+.dias{
+    background-color: rgb(33, 33, 207);
+    width: 50%;
+}
+
+.dias p{
+    font-size: 20px;
+    color: white;
+}
+  
+  
+.botao{
+    background-color:rgb(33, 118, 255);
+    height: 30%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.botao button{
+    background-color: rgb(26, 101, 221);
+    border-color: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-top: 7px;
+    font-size: 23px;
+}
+
+.botao button:hover{
+    background-color: rgb(33, 33, 207);
+}
+  
+.titulo{
+    background-color: rgb(255, 210, 12);
+}
+
+
+
+
+
+
+
+
+.email{
+    
+    background-color:rgb(7, 7, 122);
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email h4{
+    color: white;
+}
+
+.email2{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.email2 input{
+    width: 400px;
+    border-radius: 7px;
+
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 118, 255);
+    height:90px;
+    justify-content: center;
+    align-items: center;
+}
+
+.links{
+    margin-top: 50px;
+
+}
+
+.endereco{
+    margin-top: 18px;
+    margin-bottom: 30px;
+    color: white;
+}
+.rodape button{
+    background-color:rgb(33, 118, 255);
+    border: none;
+    border-radius: 7px;
+}
+
+.rodape a{
+    color: white;
+    font-size: 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+.rodape a:hover{
+    background-color:rgb(13, 90, 212) ;
+}
+
+.rodape button:hover{
+    background-color:rgb(13, 90, 212) ;
+}
+
+
+
+
+@media screen and (max-width:1530px){
+  
+  .praias, .natureza, .romance{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 70px;
+}
+
+    .h2 p{
+      order: 1;
+    }
+
+    .cards-natureza{
+      order: 2;
+    }
+
+    .email{
+      height: 150px;
+  }
+
+  .email2{
+      margin-bottom: 7px;
+      
+  }
+
+  .email input{
+      width: 280px;
+  }
+
+  .rodape{
+      height: 200px;
+  }
+    
+}
+
+
+@media screen and (max-width:1199px){
+
+.container{
+  margin-left: 45px;
+}
+
+.navbar{
+  flex-direction: column;
+}
+
+}
+
+
+@media screen and (max-width:1187px){
+  
+  .praias, .natureza, .romance{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 70px;
+}
+
+  .cards-natureza, .cards-praias, .cards-romance{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+  .h2 p{
+      order: 1;
+    }
+
+  .cards-natureza{
+      order: 2;
+    }
+
+  .card {
+      display: flex;
+      flex-direction:column;
+      width: 490px;
+      height: 520px;
+      border-radius: 12px;
+      box-shadow: 4px 6px 12px #817e7eaa;
+  }
+  
+  
+  .card img {
+      width: 100%;
+      height: 280px;
+  }
+  
+  .valores{
+    display: flex;
+    color: white;
+}
+
+.valores li{
+    font-size: 20px;
+    margin-top: 5px;
+    padding: -20px;
+    color: white;  
+}
+
+
+.dias{
+    background-color: rgb(33, 33, 207);
+    width: 50%;
+    padding: 10px;
+}
+
+.dias h4{
+    font-size: 30px;
+}
+
+.dias p{
+    font-size: 20px;
+    color: white;
+}
+  
+  
+.botao{
+    background-color:rgb(33, 118, 255);
+    height: 30%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 5px;
+}
+
+
+.botao button{
+    background-color: rgb(26, 101, 221);
+    border-color: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    width: 120px;
+}
+
+.botao button:hover{
+    background-color: rgb(33, 33, 207);
+}
+  
+.titulo{
+    background-color: rgb(255, 210, 12);
+}
+
+.titulo h3{
+    font-size: 30px;
+}
+}
+
+@media screen and (max-width:900px){
+  .nav-manual, .nav-auto{
+    margin-top: 70%;
+  }
+}

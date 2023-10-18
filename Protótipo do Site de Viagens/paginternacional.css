@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      width:100%;
+      height: 100%;
+      overflow-x: hidden;
+  }
+  
+  main{
+      width: auto;
+      height: auto;
+      text-align: center;
+  }
+  
+  
+  .navbar{
+      background-color: rgb(7, 7, 122);
+      display: flex;
+      justify-content: space-between;
+      color: white;
+      width: 100%;
+      
+  }
+  
+  .logo img{
+      height: auto;
+      margin-left: -160px;
+      margin: 10px 10px 10px 20px;
+      height: 50px;
+  }
+  
+  
+  .menu{
+      display: flex;
+      justify-content: flex-end; 
+      padding: 10px;
+      gap: 25px;
+  }
+  
+  .menu a{
+      font-size: 20px;
+  }
+  .login{
+      display: flex;
+      padding: 10px;
+      gap: 25px;
+      padding-right: 25px;
+  }
+  
+  .login a{
+      font-size: 20px;
+  }
+  
+  
+  article{
+      display: flex;
+      flex-direction: column;
+      background-color:rgb(250, 245, 196);
+      color: rgb(49, 57, 60,);
+      width: 100%;
+      height: 100%;
+  }
+  
+  article h2{
+      font-weight: bolder;
+      font-size: 40px;
+      margin-top: 80px;
+  }
+  
+  article p{
+      font-size: 30px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction:column;
+  }
+  
+  
+  .linha{
+      display: flex;
+      flex-direction: row;
+      justify-content: center
+  
+  }
+  
+  .linha1, .linha2, .linha3, .linha4, .linha5{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        gap: 60px;
+  }
+
+ 
+  
+  .h2, .h2 p{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+  }
+  
+ 
+  
+  .card {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height: 450px;
+      border-radius: 12px;
+      box-shadow: 4px 6px 12px #817e7eaa;
+  }
+  
+  .card h3{
+      color: rgb(7, 7, 122) ;
+      font-weight: bold;
+      margin-top: 10px ;
+  }
+  
+  .card img {
+      width: 100%;
+      height: 260px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+  }
+  
+  .valores{
+      display: flex;
+      color: white;
+  }
+  
+  .valores li{
+      font-size: 15px;
+      margin-top: 5px;
+      padding: -20px;
+      color: white;  
+  }
+  
+  .hospedagem{
+      background-color: rgb(7, 7, 122);
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      text-align: start;
+  }
+  
+  .dias{
+      background-color: rgb(33, 33, 207);
+      width: 50%;
+  }
+  
+  .dias p{
+      font-size: 20px;
+      color: white;
+  }
+    
+    
+  .botao{
+      background-color:rgb(33, 118, 255);
+      height: 30%;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+  }
+  
+  .botao button{
+      background-color: rgb(26, 101, 221);
+      border-color: transparent;
+      color: white;
+      border-radius: 5px;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      font-size: 23px;
+  }
+  
+  .botao button:hover{
+      background-color: rgb(33, 33, 207);
+  }
+    
+  .titulo{
+      background-color: rgb(255, 210, 12);
+  }
+  
+  
+  
+  
+
+  
+  
+  .email{
+      
+      background-color:rgb(7, 7, 122);
+      height: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .email h4{
+      color: white;
+  }
+  
+  .email2{
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+  }
+  
+  .email2 input{
+      width: 400px;
+      border-radius: 7px;
+  
+  }
+  .rodape{
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(33, 118, 255);
+      height:90px;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .links{
+      margin-top: 50px;
+  
+  }
+  
+  .endereco{
+      margin-top: 18px;
+      margin-bottom: 30px;
+      color: white;
+  }
+  .rodape button{
+      background-color:rgb(33, 118, 255);
+      border: none;
+      border-radius: 7px;
+  }
+  
+  .rodape a{
+      color: white;
+      font-size: 20px;
+      margin: 10px 10px 10px 10px;
+  }
+  
+  .rodape a:hover{
+      background-color:rgb(13, 90, 212) ;
+  }
+  
+  .rodape button:hover{
+      background-color:rgb(13, 90, 212) ;
+  }
+  
+  
+  
+  
+  @media screen and (max-width:1358px){
+    
+    .container {
+        display: flex;
+        flex-direction:column;
+      }
+      
+      
+      .linha{
+          display: flex;
+          flex-direction: column;
+          justify-content: center
+      
+      }  
+
+  
+    .email input{
+        width: 280px;
+    }
+  
+    .rodape{
+        height: 200px;
+    }
+      
+  }
+  
+  
+  @media screen and (max-width:1199px){
+  
+  .container{
+    margin-left: 45px;
+    display: flex;
+    flex-direction:column;
+  }
+  
+  
+  .linha1, .linha2, .linha3, .linha4, .linha5{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    gap: 60px;
+}
+  
+  .linha{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  
+  .card{
+    width: 450px;
+  }
+
+  .navbar{
+    flex-direction: column;
+  }
+  
+  }
+  
+  
+  @media screen and (max-width:1187px){
+    
+    
+  
+    .card {
+        display: flex;
+        flex-direction:column;
+        width: 490px;
+        height: 520px;
+        border-radius: 12px;
+        box-shadow: 4px 6px 12px #817e7eaa;
+    }
+    
+    
+    .card img {
+        width: 100%;
+        height: 280px;
+    }
+    
+    .valores{
+      display: flex;
+      color: white;
+  }
+  
+  .valores li{
+      font-size: 20px;
+      margin-top: 5px;
+      padding: -20px;
+      color: white;  
+  }
+  
+  
+  .dias{
+      background-color: rgb(33, 33, 207);
+      width: 50%;
+      padding: 10px;
+  }
+  
+  .dias h4{
+      font-size: 30px;
+  }
+  
+  .dias p{
+      font-size: 20px;
+      color: white;
+  }
+    
+    
+  .botao{
+      background-color:rgb(33, 118, 255);
+      height: 30%;
+      border-bottom-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      padding: 5px;
+  }
+  
+  
+  .botao button{
+      background-color: rgb(26, 101, 221);
+      border-color: transparent;
+      color: white;
+      border-radius: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 30px;
+      width: 120px;
+  }
+  
+  .botao button:hover{
+      background-color: rgb(33, 33, 207);
+  }
+    
+  .titulo{
+      background-color: rgb(255, 210, 12);
+  }
+  
+  .titulo h3{
+      font-size: 30px;
+  }
+  }
+  
+  
+  
