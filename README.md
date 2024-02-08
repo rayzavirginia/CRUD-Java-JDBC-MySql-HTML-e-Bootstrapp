@@ -1,7 +1,7 @@
 # Atividade-Pr-tica-do-M-dulo-3
 ## Sobre o projeto
 
-São três projetos: um site de viagens em HTML, CSS e Bootstrapp; um modelo conceitual e lógico do banco de dados que usa SQL; e um console de agência de viagens aplicando CRUD (Create, Read, Update, Delete), utilizando as classes Java, JDBC e MySql.
+Três projetos: um site de viagens em HTML, CSS e Bootstrapp; um modelo conceitual e lógico do banco de dados que usa SQL; e um console de agência de viagens aplicando CRUD (Create, Read, Update, Delete), utilizando as classes Java, JDBC e MySql.
 
 Os projetos foram construídos no curso de Desenvolvedor Full Stack da Recode Pro, como requisito para obter a nota final do Módulo 3.
 
@@ -13,10 +13,10 @@ Os projetos foram construídos no curso de Desenvolvedor Full Stack da Recode Pr
 ## Modelo conceitual
 ![Web 1](Assets/modelagem_site_de_viagens.png)
 
-## CRUD
+## CRUD Java
 ![Web 1](Assets/BackendDestinos.png)
 
-## BANCO DE DADOS
+## Banco de dados
 ![Web 1](Assets/sql_destinos.png)
 
 
