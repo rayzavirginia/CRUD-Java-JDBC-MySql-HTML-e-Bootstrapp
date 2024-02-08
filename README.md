@@ -12,6 +12,7 @@ Os projetos foram construídos no curso de Desenvolvedor Full Stack da Recode Pr
 
 ## Modelo conceitual
 ![Web 1](Assets/modelagem_site_de_viagens.png)
+![Web 2](Assets/esquema_fisico_SQL_site_de_viagens.png)
 
 ## CRUD Java
 ![Web 1](Assets/BackendDestinos.png)
